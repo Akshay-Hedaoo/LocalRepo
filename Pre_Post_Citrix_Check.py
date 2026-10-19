@@ -1,5 +1,5 @@
-#Automates pre- and post-change captures for Citrix ADC load balancers via SSH. Collects version, 
-#HA status, and LB/CS/VPN vServer statistics and summaries from Primary and Secondary appliances, 
+#Automates pre and post change captures for Citrix ADC load balancers via SSH. Collects version, 
+#HA status, and LB/CS/VPN vServer statistics and summaries from Primary and Secondary loadbalancer, 
 #saving outputs to separate timestamped text files for change validation and comparison.
 
 """
