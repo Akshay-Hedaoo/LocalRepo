@@ -8,6 +8,7 @@ Connects to Primary and Secondary ADC appliances over SSH.
 Saves each appliance's command output to a separate text file.
 """
 
+# IMPORT THE LIBRARIES AND MODULES
 import os
 import sys
 import time
@@ -32,11 +33,13 @@ COMMANDS = [
     "show cs vserver -summary -fullvalues",
     "show vpn vserver -summary -fullvalues",
 ]
+# DEFINED VALUES WHILE CONNECTING TO END HOST VIA SSH 
 
 SSH_PORT = 22
 CONNECT_TIMEOUT = 15
 COMMAND_TIMEOUT = 120
 
+# COLLECT THE INFORMATION FROM USER BEFORE CONNECTING TO THE DEVICES
 
 def prompt_capture_details():
     """Collect capture details from the user."""
@@ -294,6 +297,7 @@ def main():
     print(f"\nOutput directory: {os.getcwd()}")
     print("Capture process finished.")
 
+#RUN THE MAIN FUNCTION ONLY IF THIS SCRIPT IS CALLED
 
 if __name__ == "__main__":
     main()
